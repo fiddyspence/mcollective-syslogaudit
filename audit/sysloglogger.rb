@@ -28,7 +28,7 @@ module MCollective
         begin
           Syslog.const_get("LOG_#{facility.upcase}")
         rescue NameError => e
-          STDERR.puts "Invalid syslog facility #{facility} supplied, reverting to USER"
+          STDERR.puts "Invalid syslog facility #{facility} supplied, reverting to AUTHPRIV"
           Syslog::LOG_AUTHPRIV
         end
       end
