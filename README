@@ -1,0 +1,7 @@
+Mcollective audit plugin to send audit events via syslog, using the Ruby syslog gem
+
+Can be configured in server.cfg using
+
+plugin.syslogaudit.facility = AUTHPRIV (default)
+plugin.syslogaudit.level = info (default)
+
